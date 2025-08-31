@@ -12,7 +12,7 @@ public:
   Autor(std::string nume_, int anNastere_) : nume(std::move(nume_)), anNastere(anNastere_) {}
   const std::string& getNume() const { return nume; }
   friend std::ostream& operator<<(std::ostream& os, const Autor& a) {
-    os << "Autor{" << a.nume << ", n. " << a.anNastere << "}";
+    os << "Autor{" << a.getNume() << ", n. " << a.anNastere << "}";
     return os;
   }
 };
@@ -77,7 +77,7 @@ public:
 
   friend std::ostream& operator<<(std::ostream& os, const Carte& c) {
     os << "Carte{\"" << c.titlu << "\" (" << c.isbn << ") " << c.autor << ", " << c.editura
-       << ", an=" << c.anPublicare << ", gen=" << c.gen
+       << ", an=" << c.anPublicare << ", gen=" << c.getGen()
        << ", disp=" << c.disponibile() << "/" << c.exemplareTotal << "}";
     return os;
   }
