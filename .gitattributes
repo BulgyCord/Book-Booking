@@ -1,5 +1,13 @@
-ext/** linguist-vendored
-*.h linguist-language=C++
-*.hpp linguist-language=C++
-*.c linguist-language=C++
 *.cpp linguist-language=C++
+*.cxx linguist-language=C++
+*.cc  linguist-language=C++
+*.hpp linguist-language=C++
+*.hh  linguist-language=C++
+*.h   linguist-language=C++
+
+.github/**        linguist-vendored
+*.yml             linguist-vendored
+*.yaml            linguist-vendored
+scripts/**        linguist-vendored
+CMakeLists.txt    linguist-vendored
+*.cmake           linguist-vendored
